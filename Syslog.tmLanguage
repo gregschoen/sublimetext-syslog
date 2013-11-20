@@ -18,7 +18,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(d|f|s)_\w+</string>
+			<string>\b((d|f|s)_\w+)\b</string>
 			<key>name</key>
 			<string>string.unquoted</string>
 		</dict>
@@ -30,13 +30,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(crit|debug|err|emerg|info|notice|warn|auth|authpriv|cron|daemon|mail|news|kern|lpr|user|uucp|off|no|on|yes|allow|required)\b</string>
+			<string>\b(crit|debug|err|emerg|info|notice|warn|auth|authpriv|cron|daemon|mail|news|kern|lpr|user|uucp|off|no|on|yes|allow|required|no-parse)\b</string>
 			<key>name</key>
 			<string>support.constant</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(udp|tcp|ip|port|authentication|encrypt|chain_hostnames|flush_lines|use_dns|use_fqdn|owner|group|perm|stats_freq|bad_hostname|file|level|facility|source|filter|destination|usertty|pipe)(?=\s*\()</string>
+			<string>\b(udp|tcp|ip|port|authentication|encrypt|chain_hostnames|flush_lines|use_dns|use_fqdn|owner|group|perm|stats_freq|bad_hostname|file|level|facility|source|filter|destination|usertty|pipe|sql|type|username|password|database|host|table|columns|values|indexes|create_dirs|system|internal|follow_freq|flags)(?=\s*\()</string>
 			<key>name</key>
 			<string>entity.name.function</string>
 		</dict>
