@@ -26,11 +26,11 @@
 			<key>match</key>
 			<string>\b^(source|destination|filter|log|options)\b</string>
 			<key>name</key>
-			<string>support.constant</string>
+			<string>support.class</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(crit|debug|err|emerg|info|notice|warn|auth|authpriv|cron|daemon|mail|news|kern|lpr|user|uucp|off|no|on|yes|allow|required|no-parse)\b</string>
+			<string>\b(crit|debug|err|emerg|info|notice|warn|auth|authpriv|cron|daemon|mail|news|kern|lpr|user|uucp|off|no|on|yes|allow|required|no-parse|mysql)\b</string>
 			<key>name</key>
 			<string>support.constant</string>
 		</dict>
@@ -42,22 +42,34 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(\w+\d+)\b</string>
-			<key>name</key>
-			<string>string.unquoted</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\/[\w\.]+</string>
+			<string>(\"[\w\.\/]+\")</string>
 			<key>name</key>
 			<string>string.other</string>
 		</dict>
-        <dict>
-            <key>match</key>
-            <string>\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?):\d{1,5}\b</string>
-            <key>name</key>
-            <string>constant.numeric</string>
-        </dict>
+		<dict>
+			<key>match</key>
+			<string>(\$\w+)</string>
+			<key>name</key>
+			<string>variable</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(\d+)\b</string>
+			<key>name</key>
+			<string>constant.numeric</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?):\d{1,5}\b</string>
+			<key>name</key>
+			<string>constant.numeric</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(\d+)\b</string>
+			<key>name</key>
+			<string>constant.numeric</string>
+		</dict>
 	</array>
 	<key>scopeName</key>
 	<string>source.syslog</string>
