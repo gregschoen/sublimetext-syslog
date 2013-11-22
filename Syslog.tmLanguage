@@ -66,6 +66,12 @@
 			<key>name</key>
 			<string>constant.numeric</string>
 		</dict>
+		<dict>
+			<key>match</key>
+			<string>^(@\w+)\b</string>
+			<key>name</key>
+			<string>support.class</string>
+		</dict>
 	</array>
 	<key>scopeName</key>
 	<string>source.syslog</string>
