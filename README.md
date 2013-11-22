@@ -1,7 +1,7 @@
 sublimetext-syslog
 ==================
 
-![Twilight Theme](http://i.imgur.com/jSJXPWE.png)
+![Twilight Theme](http://i.imgur.com/lMxAdB0.png)
 
 Sublime Text Syslog Syntax Highlighting
 
